@@ -1,8 +1,8 @@
 {
-  "name": "express-webapp",
+  "name": "astikoktelpatras",
   "version": "0.2.0",
-  "author": "The WebMatrix Team <webmatrix@microsoft.com>",
-  "description": "A simple boilerplate for building node applications on Windows Azure (or wherever)",
+  "author": "leobath",
+  "description": "A simple website on Windows Azure (or wherever)",
   "contributors": [
     {
       "name": "Microsoft",
