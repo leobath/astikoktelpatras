@@ -1,3 +1,46 @@
 main {
 	margin-top: 20px;
 }
+
+#welcome-paragraph {
+	max-width: 800px;
+	text-align: left;
+	text-shadow: 0 0 5px #000;
+	color: white;
+}
+
+#welcome-title {
+	color: white;
+	font-weight: 400;
+	text-shadow: 0 0 5px #000;
+	text-align: left;
+}
+
+#navbar-custom-values {
+	background-color: #f1f1f1;
+	font-style: normal;
+}
+
+#card-image {
+	margin-top: 15px; 
+}
+
+#bus-image {
+	background-image: url("images/buses.jpg");
+}
+
+#carous-container {
+	margin-top: 10px;
+}
+
+
+
+.jumbotron {  
+  background: url("/images/bus4.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 0px;
+}
+
+#jumbo-set-margin {
+	margin-top: -20px;
+}

@@ -4,21 +4,30 @@ extends layout
 block content
       main(role='main')
       // Main jumbotron for a primary marketing message or call to action
-      .jumbotron
-        .container
-          h1.display-3 Welcome
-          |           
-          p
-            | This is an #{title} of a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
-          |           
-          p
-            a.btn.btn-primary.btn-lg(href='/pepo', role='button') Go to pepo &raquo;
+      .jumbotron#jumbo-set-margin
+       h1.display-4#welcome-title #{siteTitle}
+        |   
+        p.lead#welcome-paragraph
+         | Καλώς ήρθατε στην επίσημη ιστοσελίδα των Αστικών Συγκοινωνιών της πόλης των Πατρών. Εδώ θα βρείτε όλες τις απαραίτητες πληροφορίες για την μετακίνηση σας. Ετοιμαστείτε για... Επιβίβαση!
+        | 
+        p.lead
+         a.btn.btn-primary.btn-lg(href='#', role='button') Δείτε τα δρομολόγια
       |       
       .container
         // Example row of columns
         .row
+          .col-md-4.card(style='width: 18rem;')
+            img.card-img-top(src='images/card.jpg', alt='Card image cap', id='card-image')
+            |   
+            .card-body
+              h5.card-title Νο 2 (ΤΑΡΑΜΠΟΥΡΑ - ΤΕΙ - ΝΕΟΣ ΔΡΟΜΟΣ)
+              |     
+              p.card-text
+              | 
+              |     <br>
+              a.btn.btn-primary(href='#') Go somewhere             
           .col-md-4
-            h2 Heading
+            h2 Δρομολόγια
             |             
             p
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
@@ -27,16 +36,7 @@ block content
               a.btn.btn-secondary(href='#', role='button') View details &raquo;
           |           
           .col-md-4
-            h2 Heading
-            |             
-            p
-              | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            |             
-            p
-              a.btn.btn-secondary(href='#', role='button') View details &raquo;
-          |           
-          .col-md-4
-            h2 Heading
+            h2 Διαφήμιση
             |             
             p
               | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
