@@ -11,26 +11,48 @@ html
     
   body
    
-    nav.navbar.navbar-expand-md.navbar-dark.navbar-fixed-top.bg-primary#navbar-custom-values
-      a.navbar-brand(href='/') #{siteTitle}
+    nav.navbar.navbar-expand-xl.navbar-dark.navbar-fixed-top.bg-primary#navbar-custom-values
+      a.navbar-brand(href='/')#opacity-title #{siteTitle}
       |       
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
-      |          
+        |        
       #navbarsExampleDefault.collapse.navbar-collapse
-        ul.nav.navbar-nav
-          li.nav-item
-            a.nav-link(href='#') Χειμερινά Δρομολόγια 2018-2019
-          |           
-          li.nav-item
-            a.nav-link(href='#') Εισιτήρια
-          |         
+                                  
+             
+
         #navbarsExampleDefault.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.nav-item.dropdown
+            a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').dropdown-toggle Δρομολόγια
+            span.caret
+            ul.dropdown-menu.nav-item.bg-primary.button-radius
+             li.nav-item
+              a(href='#').nav-link Χειμερινά Δρομολόγια 2018-2019                            
+             li.nav-item
+              a(href='#').nav-link Νυχτερινά Δρομολόγια                  
+          
+                    
+          li.dropdown.nav-item
+           a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').nav-link
+             span.nav-label Εισιτήρια-Κάρτες            
+             span.caret             
+            ul.dropdown-menu.nav-item.bg-primary.button-radius
+             li.nav-item
+              a(href='#').nav-link Εισιτήρια                            
+             li.nav-item
+              a(href='#').nav-link Κάρτες Απεριορίστων Διαδρομών
+          li.nav-item
+              a.nav-link(href='#') Σημεία Ενδιαφέροντος   
+          li.nav-item
+              a.nav-link(href='#') Χάρτης 
+          li.nav-item
+              a.nav-link(href='#') Διαφήμιση
         ul.nav.navbar-nav.navbar-right
           li.nav-item
-            a.nav-link(href='/about') Σχετικά
+            a.nav-link(href='/about') Η Εταιρία μας
           li.nav-item
-            a.nav-link(href='#') Επικοινωνία
+            a.nav-link(href='/contact') Επικοινωνία
           |           
           
         
@@ -43,3 +65,4 @@ html
       window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
     script(src='../../assets/js/vendor/popper.min.js')
     script(src='javascripts/bootstrap.js')
+    script(src='javascripts/customScript.js')

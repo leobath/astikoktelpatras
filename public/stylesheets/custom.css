@@ -2,16 +2,33 @@ main {
 	margin-top: 20px;
 }
 
+body {
+	font-weight: 600;
+	background-color: #fafafa;
+	border-radius: 0px;
+}
+
+footer {
+	background-color: #6c757d;
+	color: #f1f1f1;
+}
+
+#footer-paragraph {
+	margin-bottom: -10px;
+	padding-bottom: 10px;
+}
+
 #welcome-paragraph {
 	max-width: 800px;
+	font-weight: 600;
 	text-align: left;
 	text-shadow: 0 0 5px #000;
-	color: white;
+	color: #f1f1f1;
 }
 
 #welcome-title {
-	color: white;
-	font-weight: 400;
+	color: #f1f1f1;
+	font-weight: 600;
 	text-shadow: 0 0 5px #000;
 	text-align: left;
 }
@@ -20,13 +37,30 @@ main {
 	background-color: #f1f1f1;
 	font-style: normal;
 }
-
-#card-image {
+/*
+iframe {
 	margin-top: 15px; 
+	background-size: cover;
+}*/
+
+.map-container {
+	width: auto;
+	height: 280px;
+}
+.map-container iframe{
+	width: auto;
+	height: 280px;
+	display: block;
+	pointer-events: none;
+	position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+	pointer-events: auto;
 }
 
-#bus-image {
-	background-image: url("images/buses.jpg");
+#bus-background {	
+	background: url("/images/bus4.jpg") no-repeat center center;
+	background-size: cover;
 }
 
 #carous-container {
@@ -35,12 +69,60 @@ main {
 
 
 
-.jumbotron {  
-  background: url("/images/bus4.jpg") no-repeat center center;
-  background-size: cover;
-  border-radius: 0px;
+.jumbo-set-margin {
+	margin-top: -20px;
 }
 
-#jumbo-set-margin {
-	margin-top: -20px;
+
+#opacity-title {
+	opacity: 0.5;
+}
+
+#opacity-title:hover {
+	opacity: 0.8;
+}
+
+.btn, .jumbotron, .button-radius {
+	border-radius: 0px;
+}
+
+
+/*.col-md-4, .col-md-8 {
+	border: none;
+}*/
+
+/*blinking badgie*/
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: steps(2, step-start, step-end);
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: steps(2, step-start, step-end);
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: steps(2, step-start, step-end);
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 0.0; }
+    /*50% { opacity: 1.0; }*/
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 0.0; }
+    /*50% { opacity: 1.0; }*/
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 0.0; }
+    /*50% { opacity: 1.0; }*/
+    100% { opacity: 1.0; }
 }

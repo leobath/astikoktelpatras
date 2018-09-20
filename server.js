@@ -6,7 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
-  , pepo = require('./routes/pepo')
+  , contact = require('./routes/contact')
   , about = require('./routes/about')
   , http = require('http')
   , path = require('path');
@@ -31,7 +31,7 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/users', user.list);
-app.get('/pepo', pepo.index);
+app.get('/contact', contact.index);
 app.get('/about', about.index); 
 
 

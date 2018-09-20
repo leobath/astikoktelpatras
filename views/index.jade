@@ -4,28 +4,40 @@ extends layout
 block content
       main(role='main')
       // Main jumbotron for a primary marketing message or call to action
-      .jumbotron#jumbo-set-margin
+      .jumbotron.jumbo-set-margin#bus-background
        h1.display-4#welcome-title #{siteTitle}
         |   
         p.lead#welcome-paragraph
          | Καλώς ήρθατε στην επίσημη ιστοσελίδα των Αστικών Συγκοινωνιών της πόλης των Πατρών. Εδώ θα βρείτε όλες τις απαραίτητες πληροφορίες για την μετακίνηση σας. Ετοιμαστείτε για... Επιβίβαση!
         | 
         p.lead
-         a.btn.btn-primary.btn-lg(href='#', role='button') Δείτε τα δρομολόγια
+         a.btn.btn-primary.btn-md(href='#', role='button').button-radius Δείτε τα δρομολόγια 
+         a.btn.btn-info.btn-md(href='#', role='button').button-radius Βρείτε εισιτήρια
       |       
-      .container.col-md-12
+      .col-xl-12
         // Example row of columns
         .row
-          .col-md-4.card(style='width: 18rem;')
-            iframe(src='https://www.google.com/maps/d/embed?mid=1LP-JieqtwB0htg5y8lecc580J0SqwzkO', width='auto', height='280')
-            |   
-            .card-body
-              h5.card-title Γραμμή Νο 2 (ΤΑΡΑΜΠΟΥΡΑ - ΤΕΙ - ΝΕΟΣ ΔΡΟΜΟΣ)
-              |     
-              p.card-text
-              | 
-              |     <br>
-              a.btn.btn-primary(href='#') Go somewhere             
+          .col-md-8.alert.alert-secondary.button-radius
+            h2.text-dark Νέα - Ανακοινώσεις
+            p
+            
+             a(href='#') (7/9/2018) Το ΑΣΤΙΚΟ ΚΤΕΛ ΠΑΤΡΩΝ Α.Ε. επανναπροκυρήσσει μειοδοτικό διαγωνισμό για την προμήθεια χειμερινών στολών προσωπικού έτους 2018-2019.&nbsp;
+             span.badge.badge-danger.button-radius.blink_me NEO
+            p
+             a(href='#') (7/9/2018) Το ΑΣΤΙΚΟ ΚΤΕΛ ΠΑΤΡΩΝ Α.Ε. ανακοινώνει την έναρξη χειμερινών δρομολογίων 2018-2019 την Τρίτη 11 Σεπτεμβρίου 2018.&nbsp;
+             span.badge.badge-danger.button-radius.blink_me NEO
+            p
+             a(href='#') Η νέα διεύθυνση των γραφείων του Αστικού ΚΤΕΛ Πατρών είναι Αγίου Ανδρέου 9.
+            p.text-right
+             a.btn.btn-secondary.btn-sm(href='#', role='button') Όλες οι Ανακοινώσεις &raquo;       
+          .col-md-4.alert.alert-secondary.button-radius
+            .map-container.embed-responsive.embed-responsive-1by1
+             iframe.embed-responsive-item(src='https://www.google.com/maps/d/embed?mid=1LP-JieqtwB0htg5y8lecc580J0SqwzkO&z=13', width='auto', height='280', frameBorder='0')
+            br
+            h5.card-title.text-centerΓραμμή Νο 2<br> ΤΑΡΑΜΠΟΥΡΑ - ΤΕΙ - ΝΕΟΣ ΔΡΟΜΟΣ 
+              p.text-right
+               br
+               a.btn.btn-primary(href='#').button-radius Go somewhere 
           .col-md-4
             h2 Δρομολόγια
             |             
