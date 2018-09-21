@@ -8,11 +8,14 @@ html
     link(href='stylesheets/bootstrap.css', rel='stylesheet', type='text/css')
     // Custom styles for this template
     link(href='stylesheets/custom.css', rel='stylesheet', type='text/css')
+    link(href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous', rel='stylesheet', type='text/css')
     
   body
    
     nav.navbar.navbar-expand-xl.navbar-dark.navbar-fixed-top.bg-primary#navbar-custom-values
-      a.navbar-brand(href='/')#opacity-title #{siteTitle}
+      a.navbar-brand(href='/', title='Αρχική Σελίδα')#opacity-title
+       span.fas.fa-bus-alt &nbsp
+      span.bg-primary.navbar-brand.opacity-no-hover #{title}
       |       
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
@@ -24,8 +27,9 @@ html
         #navbarsExampleDefault.collapse.navbar-collapse
         ul.nav.navbar-nav
           li.nav-item.dropdown
-            a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').dropdown-toggle Δρομολόγια
-            span.caret
+            a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').dropdown-toggle
+             span.fas.fa-route &nbsp Δρομολόγια
+             span.caret
             ul.dropdown-menu.nav-item.bg-primary.button-radius
              li.nav-item
               a(href='#').nav-link Χειμερινά Δρομολόγια 2018-2019                            
@@ -35,7 +39,8 @@ html
                     
           li.dropdown.nav-item
            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').nav-link
-             span.nav-label Εισιτήρια-Κάρτες            
+              
+             span.nav-label.fas.fa-ticket-alt &nbsp Εισιτήρια-Κάρτες            
              span.caret             
             ul.dropdown-menu.nav-item.bg-primary.button-radius
              li.nav-item
@@ -66,3 +71,4 @@ html
     script(src='../../assets/js/vendor/popper.min.js')
     script(src='javascripts/bootstrap.js')
     script(src='javascripts/customScript.js')
+    

@@ -11,6 +11,7 @@ body {
 footer {
 	background-color: #6c757d;
 	color: #f1f1f1;
+	margin-top: -30px;
 }
 
 #footer-paragraph {
@@ -74,6 +75,7 @@ iframe {
 }
 
 
+
 #opacity-title {
 	opacity: 0.5;
 }
@@ -82,8 +84,22 @@ iframe {
 	opacity: 0.8;
 }
 
+.opacity-no-hover {
+	opacity: 0.8;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 .btn, .jumbotron, .button-radius {
 	border-radius: 0px;
+}
+
+.rotate-icon {
+	transform: rotate(90deg);
 }
 
 
