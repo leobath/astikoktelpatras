@@ -102,6 +102,10 @@ iframe {
 	transform: rotate(90deg);
 }
 
+.carousel {
+	max-width: 1024px;
+}
+
 
 /*.col-md-4, .col-md-8 {
 	border: none;

@@ -23,5 +23,8 @@
   "license": "Apache",
   "engines": {
     "node": "~0.10.0 || ~4.2.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1"
   }
 }

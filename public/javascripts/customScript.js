@@ -10,3 +10,4 @@ function blinker() {
 }
 
 setInterval(blinker, 1000); //Runs every second
+
