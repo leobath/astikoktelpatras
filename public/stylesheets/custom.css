@@ -19,6 +19,8 @@ footer {
 	padding-bottom: 10px;
 }
 
+
+
 #welcome-paragraph {
 	max-width: 800px;
 	font-weight: 600;
@@ -61,8 +63,9 @@ iframe {
 }
 
 #bus-background {	
-	background: url("/images/bus4.jpg") no-repeat center center;
+	background: url("/images/bus21.jpg") no-repeat bottom center;
 	background-size: cover;
+	min-height: 600px;
 }
 
 #carous-container {
