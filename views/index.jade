@@ -9,47 +9,32 @@ block content
         |   
         p.lead#welcome-paragraph
          | Καλώς ήρθατε στην επίσημη ιστοσελίδα των Αστικών Συγκοινωνιών της πόλης των Πατρών. Εδώ θα βρείτε όλες τις απαραίτητες πληροφορίες για την μετακίνηση σας. Ετοιμαστείτε για... Επιβίβαση!
-        | 
-        p.lead
-         a.btn.btn-primary.btn-md(href='#', role='button').button-radius Δείτε τα δρομολόγια 
-         a.btn.btn-info.btn-md(href='#', role='button').button-radius Βρείτε εισιτήρια
-      |       
-      .col-xl-12
-        // Example row of columns
-        .row
-          .col-md-8.alert.alert-secondary.button-radius
+      .row.row-set-margin
+       .col-xl-12
+
+          .jumbotron
             h2 Ανακοινώσεις &nbsp
              span.fas.fa-bullhorn
             
             p
             
              a(href='#') (7/9/2018) Το ΑΣΤΙΚΟ ΚΤΕΛ ΠΑΤΡΩΝ Α.Ε. επανναπροκυρήσσει μειοδοτικό διαγωνισμό για την προμήθεια χειμερινών στολών προσωπικού έτους 2018-2019.&nbsp;
-             span.badge.badge-danger.button-radius.blink_me NEO
+             span.badge.badge-danger.blink_me NEO
             p
              a(href='#') (7/9/2018) Το ΑΣΤΙΚΟ ΚΤΕΛ ΠΑΤΡΩΝ Α.Ε. ανακοινώνει την έναρξη χειμερινών δρομολογίων 2018-2019 την Τρίτη 11 Σεπτεμβρίου 2018.&nbsp;
-             span.badge.badge-danger.button-radius.blink_me NEO
+             span.badge.badge-danger.blink_me NEO
             p
-             a(href='contact') Η νέα διεύθυνση των γραφείων του Αστικού ΚΤΕΛ Πατρών είναι Αγίου Ανδρέου 9.
+             a(href='contact') Η νέα διεύθυνση των γραφείων του Αστικού ΚΤΕΛ Πατρών είναι Αγίου Ανδρέου 9.&nbsp
+             span.blink_me.badge.badge-warning ΣΗΜΑΝΤΙΚΟ!
             p.text-right
              a.btn.btn-secondary.btn-sm(href='#', role='button') Όλες οι Ανακοινώσεις &raquo;       
-          .col-md-4.alert.alert-secondary.button-radius
-            .map-container.embed-responsive.embed-responsive-1by1
-             iframe.embed-responsive-item(src='https://www.google.com/maps/d/embed?mid=1LP-JieqtwB0htg5y8lecc580J0SqwzkO&z=13', width='auto', height='480', frameBorder='0')
-            br
-            h5.card-title.text-centerΓραμμή Νο 2<br> ΤΑΡΑΜΠΟΥΡΑ - ΤΕΙ - ΝΕΟΣ ΔΡΟΜΟΣ 
-              p.text-right
-               br
-               a.btn.btn-primary(href='#').button-radius Go somewhere 
-          .col-md-4
-            h2 Δρομολόγια
-            |             
-            p
-              | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            |             
-            p
-              a.btn.btn-secondary(href='#', role='button') View details &raquo;
-          |           
-          .col-md-4
+      .row.row-set-margin
+          .col-md-6
+           a.btn.btn-block.btn-primary(style="width: 100%; height:100%;  padding:50px; margin-bottom:20px; ", href='bus_routes')
+             h2 Δρομολόγια&nbsp
+              span.fas.fa-route(style='font-size: 40px;') &nbsp 
+            
+          .col-md-6
             h2 Διαφήμιση
             |             
             p
@@ -57,5 +42,5 @@ block content
             |             
             p
               a.btn.btn-secondary(href='#', role='button') View details &raquo;
-        |         
+      
      

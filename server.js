@@ -9,6 +9,9 @@ var express = require('express')
   , contact = require('./routes/contact')
   , about = require('./routes/about')
   , http = require('http')
+  , map_complete = require('./routes/map_complete')
+  , bus_routes = require('./routes/bus_routes')
+  , romatza_eglikada = require('./routes/romatza_eglikada')
   , path = require('path');
 
 var app = express();
@@ -31,8 +34,11 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+app.get('/map_complete', map_complete.index);
 app.get('/contact', contact.index);
-app.get('/about', about.index); 
+app.get('/about', about.index);
+app.get('/bus_routes', bus_routes.index); 
+app.get('/romatza_eglikada', romatza_eglikada.index);
 
 
 //leave last app.get

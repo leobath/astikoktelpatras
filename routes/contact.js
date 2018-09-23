@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('contact', { title: 'Επικοινωνία', siteTitle: 'ΑΣΤΙΚΟ ΚΤΕΛ ΠΑΤΡΩΝ ΑΕ' });
+  res.render('contact', { title: 'ΕΠΙΚΟΙΝΩΝΙΑ', siteTitle: 'ΑΣΤΙΚΟ ΚΤΕΛ ΠΑΤΡΩΝ ΑΕ' });
 };

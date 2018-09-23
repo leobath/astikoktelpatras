@@ -15,7 +15,7 @@ html
     nav.navbar.navbar-expand-xl.navbar-dark.navbar-fixed-top.bg-primary#navbar-custom-values
       a.navbar-brand(href='/', title='Αρχική Σελίδα')#opacity-title
        span.fas.fa-bus-alt &nbsp
-      span.bg-primary.navbar-brand.opacity-no-hover #{title}
+      span.bg-primary.navbar-brand.opacity-no-hover
       |       
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
@@ -28,19 +28,20 @@ html
         ul.nav.navbar-nav
           li.nav-item.dropdown
             a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').dropdown-toggle
-             span.fas.fa-route &nbsp Δρομολόγια
+             span.h5.font-weight-bold Δρομολόγια&nbsp
+             span.fas.fa-route
              span.caret
             ul.dropdown-menu.nav-item.bg-primary.button-radius
              li.nav-item
-              a(href='#').nav-link Χειμερινά Δρομολόγια 2018-2019                            
+              a(href='bus_routes').nav-link Χειμερινά Δρομολόγια 2018-2019                            
              li.nav-item
-              a(href='#').nav-link Νυχτερινά Δρομολόγια                  
+              a(href='bus_routes').nav-link Νυχτερινά Δρομολόγια                  
           
                     
           li.dropdown.nav-item
            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').nav-link
-              
-             span.nav-label.fas.fa-ticket-alt &nbsp Εισιτήρια-Κάρτες            
+             span.h5.font-weight-bold Εισιτήρια-Κάρτες&nbsp
+             span.nav-label.fas.fa-ticket-alt
              span.caret             
             ul.dropdown-menu.nav-item.bg-primary.button-radius
              li.nav-item
@@ -49,20 +50,25 @@ html
               a(href='#').nav-link Κάρτες Απεριορίστων Διαδρομών
           li.nav-item
               a.nav-link(href='#')
-               span.fas.fa-map-marker-alt &nbsp Σημεία Ενδιαφέροντος   
+               span.h5.font-weight-bold Σημεία Ενδιαφέροντος&nbsp 
+               span.fas.fa-map-marker-alt    
+          li.nav-item
+              a.nav-link(href='map_complete')
+               span.h5.font-weight-bold Χάρτης&nbsp 
+               span.fas.fa-map  
           li.nav-item
               a.nav-link(href='#')
-               span.fas.fa-map &nbsp Χάρτης 
-          li.nav-item
-              a.nav-link(href='#')
-               span.fas.fa-ad &nbsp Διαφήμιση
+               span.h5.font-weight-bold Διαφήμιση&nbsp
+               span.fas.fa-ad 
         ul.nav.navbar-nav.navbar-right
           li.nav-item
             a.nav-link(href='/about')
-             span.fas.fa-building &nbsp Η Εταιρία μας
+             span.h5.font-weight-bold Η Εταιρία μας&nbsp 
+             span.fas.fa-building 
           li.nav-item
             a.nav-link(href='/contact')
-             span.fas.fa-phone-square &nbsp Επικοινωνία
+             span.h5.font-weight-bold Επικοινωνία&nbsp 
+             span.fas.fa-phone-square 
           |           
           
         

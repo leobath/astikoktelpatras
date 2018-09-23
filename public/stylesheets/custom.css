@@ -32,6 +32,7 @@ footer {
 	font-weight: 600;
 	text-shadow: 0 0 5px #000;
 	text-align: left;
+	margin-top: -20px;
 }
 
 #navbar-custom-values {
@@ -46,11 +47,11 @@ iframe {
 
 .map-container {
 	width: auto;
-	height: 280px;
+	height: auto;
 }
 .map-container iframe{
 	width: auto;
-	height: 280px;
+	height: auto;
 	display: block;
 	pointer-events: none;
 	position: relative; /* IE needs a position other than static */
@@ -68,10 +69,18 @@ iframe {
 	margin-top: 10px;
 }
 
+.anouncements-margin {
+	margin-top: -30px;
+}
+
 
 
 .jumbo-set-margin {
 	margin-top: -20px;
+}
+
+.padding-20 {
+	padding: 20px;
 }
 
 
@@ -104,6 +113,31 @@ iframe {
 
 .carousel {
 	max-width: 1024px;
+}
+
+.min-width-height {
+	min-height: auto;
+	min-height: 50px;
+	min-width: 280px;
+	max-width: 280px;
+}
+
+.index-button-cards {
+	min-height: 320px;
+	max-height: 500px;
+}
+
+#margin-fix-routes {
+	margin-left: 50px;
+}
+
+.padding-20 {
+	padding: -50px;
+}
+
+
+.row-set-margin {
+	margin-top: -30px;
 }
 
 
