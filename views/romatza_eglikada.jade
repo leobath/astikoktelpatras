@@ -2,31 +2,43 @@
 extends layout
 
 block content
-      main(role='main')
+
       // Main jumbotron for a primary marketing message or call to action
       
-      .jumbotron.jumbo-set-margin
-       
-        .col-xl-12
-          
-          br
-          br
-            
-          .row
-           .col-md-6
-           
-            .row.text-weigth-bold.h2
-             .form-inline
+      .jumbotron.margin-padding-10
+       .row
+        .col-xl-2
+         .row.text-weigth-bold
+          a(href='bus_routes').btn.btn-primary.font-weight-bold Πίσω στα δρομολόγια
+        .col-xl-2
+          .form-inline
               .form-group
                   label(for='exampleFormControlSelect1')
-                  select#exampleFormControlSelect1.form-control.btn-primary 
-                        option Επιλέξτε προορισμό                  
-                        option ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ
-                        option ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ
-                        option ΠΛΑΖ-ΡΩΜΑΝΟΥ
-                        option ΡΩΜΑΝΟΥ-ΣΥΝΟΡΑ
-            h5  Ώρες:
-            
+                  select(name='myfield', onchange='this.formsubmit()')#exampleFormControlSelect1.form-control.btn-primary.border-radius-0.font-weight-bold
+                        option(selected) Επιλέξτε προορισμό...                  
+                        option(value='terpsithea-eglykada')#value-one ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ
+                        option(value='terpsithea-diakou') ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ
+                        option(value='plaz-romanou') ΠΛΑΖ-ΡΩΜΑΝΟΥ
+                        option(value= 'romanou-synora') ΡΩΜΑΝΟΥ-ΣΥΝΟΡΑ
+                  noscript
+                   input(type='submit', value='Submit')
+                   
+        .col-xl-4
+          
+        .col-xl-4
+         h4.font-weight-bold.text-right #{title}
+      
+      .jumbotron.margin-padding-10
+       .row
+        .col-xl-6
+        
+        .col-xl-6
+      
+       hr
+      .jumbotron.margin-padding-10
+       .row
+        .col-xl-6 
+            h1#bus-hours #{title}
             br
             br
             p
