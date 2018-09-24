@@ -8,10 +8,22 @@ body {
 	border-radius: 0px;
 }
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.row-no-padding {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  
+}
+
 footer {
 	background-color: #6c757d;
 	color: #f1f1f1;
-	margin-top: -30px;
+	margin-top: -18px;
 }
 
 #footer-paragraph {
@@ -79,7 +91,10 @@ iframe {
 
 
 .jumbo-set-margin {
-	margin-top: -20px;
+
+	margin-top: -30px;
+	
+	
 }
 
 .padding-20 {
@@ -110,6 +125,10 @@ iframe {
 	border-radius: 0px;
 }
 
+.jumbotron {
+	size: cover;
+}
+
 .rotate-icon {
 	transform: rotate(90deg);
 }
@@ -130,6 +149,10 @@ iframe {
 	max-height: 500px;
 }
 
+.button-whitespace {
+	white-space: normal;
+}
+
 #margin-fix-routes {
 	margin-left: 50px;
 }
@@ -138,6 +161,9 @@ iframe {
 	padding: -50px;
 }
 
+.margin-bottom-18 {
+	margin-bottom: 0px ;
+}
 
 .row-set-margin {
 	margin-top: -30px;
