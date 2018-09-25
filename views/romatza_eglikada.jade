@@ -7,163 +7,47 @@ block content
       
       .jumbotron.margin-padding-10
        .row
-        .col-xl-2
+        .col-xl-4
          .row.text-weigth-bold
-          a(href='bus_routes').btn.btn-primary.font-weight-bold Πίσω στα δρομολόγια
-        .col-xl-2
-          .form-inline
-              .form-group
-                  label(for='exampleFormControlSelect1')
-                  select(name='myfield', onchange='this.formsubmit()')#exampleFormControlSelect1.form-control.btn-primary.border-radius-0.font-weight-bold
-                        option(selected) Επιλέξτε προορισμό...                  
-                        option(value='terpsithea-eglykada')#value-one ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ
-                        option(value='terpsithea-diakou') ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ
-                        option(value='plaz-romanou') ΠΛΑΖ-ΡΩΜΑΝΟΥ
-                        option(value= 'romanou-synora') ΡΩΜΑΝΟΥ-ΣΥΝΟΡΑ
-                  noscript
-                   input(type='submit', value='Submit')
+      
+         
+           a(href='bus_routes').btn.btn-sm.btn-primary.font-weight-bold
+             span.fas.fa-long-arrow-alt-left.btn-primary 
+              span(style='font-family: sans-serif; opacity:0.8') &nbsp Πίσω στα δρομολόγια
+        
+          
                    
         .col-xl-4
-          
+          h5.font-weight-bold Δρομολόγιο: #{title}
+           span.form-inline
+                 label(for='single') Προορισμός:&nbsp
+                  select#single.form-control.form-control-md.bg-light.border-radius-0.font-weight-bold.single-label
+                        option(value=0) Επιλέξτε προορισμό...                  
+                        option(value='eglykada')ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ
+                        option(value='diakou') ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ
+                        option(value='plaz-romanou') ΠΛΑΖ-ΡΩΜΑΝΟΥ
+                        option(value= 'romanou-synora') ΡΩΜΑΝΟΥ-ΣΥΝΟΡΑ
         .col-xl-4
-         h4.font-weight-bold.text-right #{title}
+         
       
-      .jumbotron.margin-padding-10
-       .row
-        .col-xl-6
-        
-        .col-xl-6
       
        hr
       .jumbotron.margin-padding-10
        .row
-        .col-xl-6 
-            h1#bus-hours #{title}
+        .col-xl-6.margin-form-fix.calendar-alt-background
+         .map-container.embed-responsive.embed-responsive-4by3
+          .embed-responsive-item
+           h2#timetable-title
+           br
+           p#timetable
             br
             br
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΑΦΕΤΗΡΙΑ ΡΟΜΑΝΤΖΑ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΡΟΜΑΝΤΖΑ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΜΑΤΘΑΙΟΥ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΑΓΥΙΑ (ΓΡΑΜΜΕΣ)
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΑΓ. ΚΩΝΣΤΑΝΤΙΝΟΣ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΝΟΤΑΡΑ ΚΑΙ ΧΟΡΤΑΤΖΗ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΠΙΝΔΑΡΟΥ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΑΝΘΟΠΩΛΕΙΟ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΝΟΤΑΡΑ ΚΑΙ ΑΜΕΡΙΚΗΣ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΓΗΠΕΔΟ ΠΑΝΑΧΑΪΚΗΣ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΛΕΥΚΩΣΙΑΣ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp ΕΛΤΑ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΑΓ. ΣΟΦΙΑΣ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΠΛΑΤΕΙΑ ΑΓ. ΛΑΥΡΑΣ-ΙΚΑ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΝΟΡΜΑΝ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΜΟΥΡΟΥΖΗ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΠΑΛΙΟ ΑΡΣΑΚΕΙΟ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΑΓ. ΝΙΚΟΛΑΟΥ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΠΛΑΤΕΙΑ ΓΕΩΡΓΙΟΥ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΔΗΜΑΡΧΕΙΟ ΠΑΤΡΑΣ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΟΤΕ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΨΗΛΑ ΑΛΩΝΙΑ (άνοδος Γούναρη)
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΟΜΟΝΟΙΑ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΑΓ. ΔΗΜΗΤΡΙΟΣ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΠΑΛΑΙΟΛΟΓΟΥ ΓΡ.
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbsp3ου ΟΡΕΙΒΑΤΙΚΟΥ
-            p
-             span.fas.fa-map-pin
-             a(href='#') &nbspΠΛ.ΤΑΜΠΑΧΑΝΑ
-             
             
              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              // 12ου ΣΥΝΤΑΓΜΑΤΟΣ
-                              // Γ ΝΕΚΡΟΤΑΦΕΙΟ ΠΑΤΡΩΝ
-                              // ΠΑΡΚΟ 
-                              
-                              // ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΥ
-                              // ΚΛΕΑΡΧΟΥ
-                              // ΣΑΝΤΟ
-                              // ΛΥΣΑΝΔΡΟΥ
-                              // ΛΕΩΝΙΔΟΥ
-                              // ΑΓ. ΑΝΔΡΕΑΣ ΕΓΛΥΚΑΔΑΣ
-                              // 41ο ΔΗΜΟΤΙΚΟ ΣΧΟΛΕΙΟ ΠΑΤΡΩΝ
-                              // ΠΕΛΟΠΟΣ
-                              // ΧΑΡΑΜΑ
-                              // ΣΙΚΕΛΙΑΝΟΥ
-                              // ΜΑΡΑΘΩΝΟΜΑΧΩΝ     
-                              // ΛΟΧ.ΦΩΤΟΠΟΥΛΟΥ
-                              // ΤΕΡΜΑ ΝΕΚΡΟΤΑΦΕΙΟ ΕΓΛΥΚΑΔΑΣ
-             
-             
-             
-           .col-md-6
-            .map-container.embed-responsive.embed-responsive-1by1
-             iframe.embed-responsive-item(src='https://www.google.com/maps/d/embed?mid=1Z1rcynjOSOcXCTgqGiuVv-Tj8ADX8RlY', width='auto', height='auto', frameborder='0', style='border:0', allowfullscreen)
+        .col-md-6.margin-form-fix
+          
+            .map-container.embed-responsive.embed-responsive-4by3.map-background
+             iframe.embed-responsive-item#iframe(src='', width='auto', height='auto', frameborder='0', style='border:0', allowfullscreen)
 
              
            

@@ -5,9 +5,9 @@ block content
      main(role='main')
       // Main jumbotron for a primary marketing message or call to action
       .jumbotron.jumbo-set-margin#bus-background
-       h1.display-4#welcome-title(style='margin-top: 200px;') #{siteTitle}
+       h1.display-4#welcome-title(style='margin-top: 60px;') #{siteTitle}
         |   
-        p.lead#welcome-paragraph(style='margin-top: 50px;')
+        p.lead#welcome-paragraph(style='')
          | Καλώς ήρθατε στην επίσημη ιστοσελίδα των Αστικών Συγκοινωνιών της πόλης των Πατρών. Εδώ θα βρείτε όλες τις απαραίτητες πληροφορίες για την μετακίνηση σας. Ετοιμαστείτε για... Επιβίβαση!
       
       .jumbotron.margin-padding-0
@@ -30,7 +30,7 @@ block content
              a(href='contact') Η νέα διεύθυνση των γραφείων του Αστικού ΚΤΕΛ Πατρών είναι Αγίου Ανδρέου 9.&nbsp
              span.blink_me.badge.badge-warning ΣΗΜΑΝΤΙΚΟ!
             p.text-right
-             a.btn.btn-secondary.btn-sm(href='#', role='button') Όλες οι Ανακοινώσεις &raquo;
+             a(href='#', role='button') Όλες οι Ανακοινώσεις &raquo;
              
         .col-md-8
          .jumbotron
@@ -39,7 +39,7 @@ block content
       .row.row-no-padding.jumbo-set-margin
       
        .col-xl-6.nopadding
-        a(href='#').btn.btn-primary.btn-block.padding-20
+        a(href='bus_routes').btn.btn-primary.btn-block.padding-20
          h2 Δρομολόγια&nbsp
           span.fas.fa-route(style='font-size: 40px;') &nbsp 
          
@@ -52,7 +52,7 @@ block content
           h2 Σημεία Ενδιαφέροντος&nbsp
               span.fas.fa-map-marker-alt(style='font-size: 40px;') &nbsp 
        .col-xl-6.nopadding
-        a(href='#').btn.btn-primary.btn-block.padding-20.button-whitespace
+        a(href='map_complte').btn.btn-primary.btn-block.padding-20.button-whitespace
          h2 Χάρτης&nbsp
               span.fas.fa-map(style='font-size: 40px;') &nbsp  
        .col-xl-6.nopadding
@@ -60,6 +60,6 @@ block content
           h2 Διαφήμιση&nbsp
            span.fas.fa-.fa-ad(style='font-size: 40px;') &nbsp
        .col-xl-6.nopadding
-        a(href='#').btn.btn-primary.btn-block.padding-20.button-whitespace
+        a(href='about').btn.btn-primary.btn-block.padding-20.button-whitespace
           h2.font-weight-bold Η Εταιρία μας&nbsp
            span.fas.fa-building(style='font-size: 40px;') &nbsp

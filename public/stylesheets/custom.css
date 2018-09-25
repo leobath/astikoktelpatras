@@ -6,6 +6,8 @@ body {
 	font-weight: 600;
 	background-color: #fafafa;
 	border-radius: 0px;
+	margin: auto;
+	padding: auto;
 }
 
 .nopadding {
@@ -63,19 +65,21 @@ iframe {
 	width: auto;
 	height: auto;
 }
+/*
 .map-container iframe{
 	width: auto;
 	height: auto;
 	display: block;
 	pointer-events: none;
 	position: relative; /* IE needs a position other than static */
-}
-.map-container iframe.clicked{
-	pointer-events: auto;
-}
+/*}*/
+
+/*.map-container iframe.clicked{*/
+	/*pointer-events: auto;*/
+/*}*/
 
 #bus-background {	
-	background: url("/images/bus21.jpg") no-repeat bottom center;
+	background: url("/images/bus18.jpg") no-repeat bottom center;
 	background-size: cover;
 	min-height: 600px;
 }
@@ -172,12 +176,36 @@ iframe {
 
 .margin-padding-10 {
 	margin: 0px;
-	padding: 10px;
+	padding-top: 10px;
 }
 
 .margin-padding-0 {
 	margin: 0px;
 	padding: 0px;
+}
+
+.margin-form-fix {
+	margin-top: -25px;
+}
+
+.single-label:focus {
+	box-shadow: none;
+}
+
+.map-background {
+	background-image: url("/svgs/solid/map-marked-alt.svg") ;
+	background-size: 72%;
+	background-repeat: no-repeat;
+	opacity: 0.1;
+	background-position: center;
+}
+
+.calendar-alt-background {
+	background-image: url("/svgs/solid/calendar-alt.svg") ;
+	background-size: 54%;
+	background-repeat: no-repeat;
+	opacity: 0.1;
+	background-position: center;
 }
 
 
