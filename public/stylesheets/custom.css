@@ -13,12 +13,15 @@ body {
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+  
 }
 
 .row-no-padding {
     padding-top: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+	padding-bottom: 0 !important;
+
   
 }
 
@@ -81,7 +84,7 @@ iframe {
 #bus-background {	
 	background: url("/images/bus18.jpg") no-repeat bottom center;
 	background-size: cover;
-	min-height: 600px;
+	min-height: 650px;
 }
 
 #carous-container {
@@ -171,7 +174,7 @@ iframe {
 }
 
 .row-set-margin {
-	margin-top: -30px;
+	margin-top: -32px;
 }
 
 .margin-padding-10 {
@@ -206,6 +209,10 @@ iframe {
 	background-repeat: no-repeat;
 	opacity: 0.1;
 	background-position: center;
+}
+
+.footer-margin {
+	margin-top: -32px;
 }
 
 
