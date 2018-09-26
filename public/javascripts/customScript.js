@@ -39,7 +39,7 @@ if(singleValues == 0){
     
     $( "#timetable" ).html(eglykada);
     $("#timetable-title").html("<h5>Ώρες Αναχώρησης</h5>");
-    $( '#iframe' ).attr( 'src', function ( i, val ) { return 'https://www.google.com/maps/d/embed?mid=1LP-JieqtwB0htg5y8lecc580J0SqwzkO&z=12'; });
+    $( '#iframe' ).attr( 'src', function ( i, val ) { return 'https://www.google.com/maps/d/embed?mid=1LP-JieqtwB0htg5y8lecc580J0SqwzkO'; });
     $(".map-background").css("background-image", "none");
     $(".map-background").css("opacity", 1);
     $(".calendar-alt-background").css("background-image", "none");
@@ -48,7 +48,7 @@ if(singleValues == 0){
   else if (singleValues === 'diakou') {
     $("#timetable-title").html("<h5>Ώρες Αναχώρησης</h5>");
     $( "#timetable" ).html(diakou);    
-    $( '#iframe' ).attr( 'src', function ( i, val ) { return 'https://www.google.com/maps/d/embed?mid=1Z1rcynjOSOcXCTgqGiuVv-Tj8ADX8RlY&z=13'; });
+    $( '#iframe' ).attr( 'src', function ( i, val ) { return 'https://www.google.com/maps/d/embed?mid=1Z1rcynjOSOcXCTgqGiuVv-Tj8ADX8RlY'; });
     $(".map-background").css("background-image", "none");
     $(".map-background").css("opacity", 1);
     $(".calendar-alt-background").css("background-image", "none");
