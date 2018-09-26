@@ -8,6 +8,7 @@ body {
 	border-radius: 0px;
 	margin: auto;
 	padding: auto;
+	overflow: scroll;
 }
 
 .nopadding {
