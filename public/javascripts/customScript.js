@@ -12,22 +12,22 @@ setInterval(blinker, 2000); //Runs every second
 
 // Timetables departure to different destinations
 
-var timetableHTML = ["ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ timetable", "ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ"];
+let timetableHTML = ["ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ timetable", "ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ"];
+
+
 
 
 function displayVals() {
   var eglykada = "hi";
     
   var diakou = `
-                <div>
-                  <span>Some HTML here</span>
-                </div>
+               hello there
       `;
       
   var singleValues = $( "#single" ).val();
   
 if(singleValues == 0){
-  $( "#timetable" ).html( "" );
+  $( "#timetable" ).html('');
   $("#timetable-title").html("");
   $( '#iframe' ).attr( 'src', function ( i, val ) { return ''; });
   $(".map-background").css("opacity", 0.1);
