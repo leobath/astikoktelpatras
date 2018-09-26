@@ -32,8 +32,7 @@ if(singleValues == 0){
   $( '#iframe' ).attr( 'src', function ( i, val ) { return ''; });
   $(".map-background").css("opacity", 0.1);
   $('.map-background').css("background-image", "url(\"/svgs/solid/map-marked-alt.svg\")");
-  $(".calendar-alt-background").css("opacity", 0.1);
-  $('.calendar-alt-background').css("background-image", "url(\"/svgs/solid/calendar-alt.svg\")");
+
 }
   else if(singleValues === 'eglykada') {
     
@@ -42,8 +41,8 @@ if(singleValues == 0){
     $( '#iframe' ).attr( 'src', function ( i, val ) { return 'https://www.google.com/maps/d/embed?mid=1LP-JieqtwB0htg5y8lecc580J0SqwzkO'; });
     $(".map-background").css("background-image", "none");
     $(".map-background").css("opacity", 1);
-    $(".calendar-alt-background").css("background-image", "none");
-    $(".calendar-alt-background").css("opacity", 1);
+    $("#route-destination").html("<b>ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ");
+   
   }
   else if (singleValues === 'diakou') {
     $("#timetable-title").html("<h5>Ώρες Αναχώρησης</h5>");
@@ -51,8 +50,8 @@ if(singleValues == 0){
     $( '#iframe' ).attr( 'src', function ( i, val ) { return 'https://www.google.com/maps/d/embed?mid=1Z1rcynjOSOcXCTgqGiuVv-Tj8ADX8RlY'; });
     $(".map-background").css("background-image", "none");
     $(".map-background").css("opacity", 1);
-    $(".calendar-alt-background").css("background-image", "none");
-    $(".calendar-alt-background").css("opacity", 1);
+    $("#route-destination").html("<b>ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ");
+
   }
   
   

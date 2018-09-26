@@ -8,47 +8,51 @@ block content
       .jumbotron.margin-padding-10
        .row
         .col-xl-4
-         .row.text-weigth-bold
+         .text-weigth-bold
       
          
-           a(href='bus_routes').btn.btn-sm.btn-primary.font-weight-bold
+           a(href='bus_routes', style='margin-top:0px;').btn.btn-sm.btn-primary.font-weight-bold
              span.fas.fa-long-arrow-alt-left.btn-primary 
               span(style='font-family: sans-serif; opacity:0.8') &nbsp Πίσω στα δρομολόγια
+           br
+        
+           p.form-inline(style='margin-top: 7px; margin-bottom:-5px;')
+                 label(for='single')
+                  select#single.form-control.form-control-md.btn.btn-sm.btn-primary.border-radius-0.font-weight-bold.single-label
+                        option(value=0) Επιλέξτε προορισμό ...                  
+                        option(value='eglykada')ΡΟΜΑΝΤΖΑ-ΕΓΛΥΚΑΔΑ
+                        option(value='diakou') ΡΟΜΑΝΤΖΑ-ΔΙΑΚΟΥ
+                        option(value='elekistra') ΡΟΜΑΝΤΖΑ-ΕΛΕΚΙΣΤΡΑ 
+                  
         
           
                    
         .col-xl-4
-          h5.font-weight-bold Δρομολόγιο: #{title}
-           span.form-inline
-                 label(for='single') Προορισμός:&nbsp
-                  select#single.form-control.form-control-md.bg-light.border-radius-0.font-weight-bold.single-label
-                        option(value=0) Επιλέξτε προορισμό...                  
-                        option(value='eglykada')ΤΕΡΨΙΘΕΑ-ΕΓΛΥΚΑΔΑ
-                        option(value='diakou') ΤΕΡΨΙΘΕΑ-ΔΙΑΚΟΥ
-                        option(value='plaz-romanou') ΠΛΑΖ-ΡΩΜΑΝΟΥ
-                        option(value= 'romanou-synora') ΡΩΜΑΝΟΥ-ΣΥΝΟΡΑ
+          h5.font-weight-bold.text-muted Δρομολόγιο: 
+           span.font-weight-bold #{title}
+          h5.font-weight-bold.text-muted Προορισμός: 
+           span#route-destination.text-dark
+          
         .col-xl-4
          
       
       
        hr
+       
       .jumbotron.margin-padding-10
-       .row
-        .col-xl-6.margin-form-fix.calendar-alt-background
-         .map-container.embed-responsive.embed-responsive-4by3
-          .embed-responsive-item
-           h2#timetable-title
-           
+       .row(style='margin-top:-30px;')
+        .col-md-6.margin-form-fix
+         .jumbotron
+           h2#timetable-title           
            
            br
            p#timetable
-            br
-            br
+         
           
              
         .col-md-6.margin-form-fix
           
             .map-container.embed-responsive.embed-responsive-4by3.map-background
-             iframe.embed-responsive-item#iframe(src='', width='auto', height='auto', frameborder='0', style='border:0', allowfullscreen)
+             iframe.embed-responsive-item#iframe(src='', width='auto', height='auto', frameborder='0', style='border:0; margin-top:-46px;', allowfullscreen)
 
              
