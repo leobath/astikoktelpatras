@@ -76,6 +76,10 @@ iframe {
 	background-size: cover;
 }*/
 
+.row-max-height {
+	max-height: 500px;
+}
+
 .map-container {
 	width: auto;
 	height: auto;
