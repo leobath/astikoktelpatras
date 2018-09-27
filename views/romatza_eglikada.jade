@@ -10,19 +10,12 @@ block content
         .col-md-2
          .text-weigth-bold
       
-          
+          .container
            a(href='bus_routes', style='margin-top:0px;').btn.btn-md.btn-primary.font-weight-bold
              span.fas.fa-caret-left.btn-primary 
               span(style='font-family: sans-serif; opacity:0.8')  Πίσω στα δρομολόγια
            span.btn-block 
-            .form-inline(style='margin-top: 7px; margin-bottom:-5px;')
-             .form-block
-                 label(for='single', style='font-family: sans-serif;')
-                  select#single.form-control.form-control-md.btn.btn-md.btn-primary.border-radius-0.font-weight-bold.single-label
-                        option(value=0) Επιλέξτε προορισμό                  
-                        option(value='eglykada')ΕΓΛΥΚΑΔΑ
-                        option(value='diakou') ΔΙΑΚΟΥ
-                        option(value='elekistra') ΕΛΕΚΙΣΤΡΑ 
+            
                   
         .col-md-2
           
@@ -30,8 +23,16 @@ block content
         .col-md-8
           h5.font-weight-bold.text-muted  Δρομολόγιο: 
            span.font-weight-bold ΡΟΜΑΝΤΖΑ - ΕΓΛΥΚΑΔΑ - ΔΙΑΚΟΥ - ΡΩΜΑΝΟΥ
-          h5.font-weight-bold.text-muted Προορισμός: 
-           span#route-destination.text-dark
+          h5.font-weight-bold.text-muted 
+           span.form-inline(style='margin-top: 7px; margin-bottom:-5px;')             
+                 label(for='single', style='font-family: sans-serif;, border-radius: 25px;')Προορισμός:&nbsp
+                  select#single.form-control.form-control-md.btn.btn-md.btn-primary.font-weight-bold.single-label
+                        option(value=0).font-weight-bold Επιλέξτε προορισμό .... 
+                         span    
+                        option(value='eglykada')ΕΓΛΥΚΑΔΑ
+                        option(value='diakou') ΔΙΑΚΟΥ
+                        option(value='elekistra') ΕΛΕΚΙΣΤΡΑ 
+           
           
        
          
