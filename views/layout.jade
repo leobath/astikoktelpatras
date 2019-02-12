@@ -13,60 +13,52 @@ html
   body
    
     nav.navbar.navbar-expand-xl.navbar-dark.navbar-fixed-top.bg-primary#navbar-custom-values
-      a.navbar-brand(href='/', title='Αρχική Σελίδα')#opacity-title
+      a.navbar-brand(href='/', title='Αρχική Σελίδα')
        span.fas.fa-bus-alt &nbsp
-      span.bg-primary.navbar-brand.opacity-no-hover
+      span.bg-primary.navbar-brand
       |       
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
         |        
-      #navbarsExampleDefault.collapse.navbar-collapse          
+      #navbarsExampleDefault.collapse.navbar-collapse         
           
         ul.nav.navbar-nav
           li.nav-item.dropdown
-            a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').dropdown-toggle
+            a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true', style='color:#fff;').dropdown-toggle
              span.h6.font-weight-bold Δρομολόγια&nbsp
              span.fas.fa-route
              span.caret
             ul.dropdown-menu.nav-item.bg-primary.button-radius
              li.nav-item.font-weight-bold
-              a(href='bus_routes').nav-link Χειμερινά Δρομολόγια 2018-2019 
+              a(href='bus_routes',style='color:#fff;').nav-link Χειμερινά Δρομολόγια 2018-2019 
                span.fas.fa-snowflake                           
              li.nav-item.font-weight-bold
-              a(href='bus_routes').nav-link Νυχτερινά Δρομολόγια 
+              a(href='bus_routes', style='color:#fff;').nav-link Νυχτερινά Δρομολόγια 
                span.fas.fa-moon
           
                     
           li.dropdown.nav-item
-           a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true').nav-link
+           a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true', style='color:#fff;').nav-link
              span.h6.font-weight-bold Εισιτήρια-Κάρτες&nbsp
              span.nav-label.fas.fa-ticket-alt
              span.caret             
             ul.dropdown-menu.nav-item.bg-primary.button-radius
              li.nav-item
-              a(href='#').nav-link Εισιτήρια 
+              a(href='#', style='color:#fff;').nav-link Εισιτήρια 
                span.fas.fa-ticket-alt                           
              li.nav-item
-              a(href='#').nav-link Κάρτες Απεριορίστων Διαδρομών 
+              a(href='#', style='color:#fff;').nav-link Κάρτες Απεριορίστων Διαδρομών 
                span.fas.fa-id-card
           li.nav-item
-              a.nav-link(href='#')
-               span.h6.font-weight-bold Σημεία Ενδιαφέροντος&nbsp 
-               span.fas.fa-map-marker-alt
-          li.nav-item
-              a.nav-link(href='map_complete')
+              a.nav-link(href='map_complete', style='color:#fff;')
                span.h6.font-weight-bold Χάρτης&nbsp 
                span.fas.fa-map  
           li.nav-item
-              a.nav-link(href='#')
-               span.h6.font-weight-bold Διαφήμιση&nbsp
-               span.fas.fa-ad 
-          li.nav-item
-            a.nav-link(href='/about')
+            a.nav-link(href='/about', style='color:#fff;')
              span.h6.font-weight-bold Η Εταιρία μας&nbsp 
              span.fas.fa-building 
           li.nav-item
-            a.nav-link(href='/contact')
+            a.nav-link(href='/contact', style='color:#fff;')
              span.h6.font-weight-bold Επικοινωνία&nbsp 
              span.fas.fa-phone-square 
           |           
