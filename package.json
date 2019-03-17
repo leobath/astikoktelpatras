@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "jade": "*",
-    "express": "~3.1.0"
+    "express": "~3.11.0"
   },
   "noAnalyze": true,
   "license": "Apache",
